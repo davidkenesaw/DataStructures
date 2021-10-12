@@ -1,0 +1,10 @@
+-Ic:\MinGWNew\lib\gcc\mingw32\9.2.0\include\c++
+-Ic:\MinGWNew\lib\gcc\mingw32\9.2.0\include\c++\mingw32
+-Ic:\MinGWNew\lib\gcc\mingw32\9.2.0\include\c++\backward
+-Ic:\MinGWNew\lib\gcc\mingw32\9.2.0\include
+-Ic:\MinGWNew\include
+-Ic:\MinGWNew\lib\gcc\mingw32\9.2.0\include-fixed
+-IC:\MinGWNew\bin\mingw\include
+-IE:\Programing\C++\Assignment 0\newTestass3
+-target
+mingw32
