@@ -4,21 +4,22 @@
 #include <cctype>
 #include <bits/stdc++.h>//provides standard library functions
 using namespace std;
-double findMean(int *A,int N);
+int countVowels(string value);
 int main(int argc, char **argv)
-{//1 2 3 4 5
-	int size = 3;
+{
+	string value = "My list of Objects";
+	cout<<countVowels(value);
 	
-	int *a = new int[size];
-	a[0] = 1;
-	a[1] = 2;
-	a[2] = 5;
-	//cout<<a[0]<<" "<<a[1]<<" "<<a[2]<<" ";
-	
-	cout<<findMean(a,size);
 	return 0;
 }
-double findMean(int *A,int N){
-	if(N == 1)return A[N-1];
-	return (findMean(A, N-1)*(N-1) + A[N-1]) / N;
+int countVowels(string value){
+	transform(value.begin(), value.end(),value.begin(), ::tolower);
+	if(value.size() == 0){
+		return 0;
+	}
+	if(value[0] == 'a'||value[0] == 'e'||value[0] == 'i'||value[0] == 'o'||value[0] == 'u'){
+		return countVowels(value.substr(1)) + 1;
+	}
+	return countVowels(value.substr(1));
+	
 }
